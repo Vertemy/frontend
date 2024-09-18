@@ -1,0 +1,70 @@
+.aut{
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+}
+.login{
+    display: flex;
+    border: solid var(--bs-gray-300) 1px;
+    align-items: center!important;
+    justify-content: center!important;
+    height: 100%;
+    width: 60px;
+    border-radius: 5px;
+    color: var(--bs-nav-link-color)
+    }
+.login p{
+    margin: auto;
+    color: var(--bs-nav-link-color);
+
+}
+.link{
+    color: var(--bs-nav-link-color);
+}
+.box-teach{
+    background-color: #50C878!important;
+}
+.teach{
+    color: black!important;
+}
+.teach:hover{
+    background-color: aqua!important;
+}
+.image-for-cohot{
+    background-color: green;
+}
+.course-box{
+    display: flex!important;
+}
+.course-1{
+    margin-right: 5px;
+    border: solid 1px #EEE8DF;
+    border-radius: 20px;
+    padding: 10px 30px 30px 30px;
+}
+.course-2{
+    margin-right: 5px;
+    border: solid 1px #EEE8DF;
+    border-radius: 20px;
+    padding: 10px 30px 30px 30px;
+}
+.image-box{
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 20px;
+}
+.button-m{
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #3CAEA3
+    ;
+    background-color: black;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+
+}
+.button-m:hover{
+    background-color: #64C3FF;    ;
+}

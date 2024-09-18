@@ -1,0 +1,46 @@
+
+.linkss{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 35px;
+}
+
+.left-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+
+}
+.input-group-text {
+    background: transparent;
+    border: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  .input-group-text .fa-search {
+    color: #28a745; /* Match your button variant color */
+  }
+  .nav-link {
+    font-size: 1.5rem; /* Adjust icon size */
+    color: #28a745; /* Match your design color */
+  }
+  
+  .nav-link:hover {
+    color: #218838; /* Adjust hover color */
+  }
+  .login{
+    background-color: #e4f5ff!important;
+    color: rgb(6, 106, 201);
+    width: 90px;
+    margin-left:10px ;
+
+
+  }
+  .signinP{
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+  }

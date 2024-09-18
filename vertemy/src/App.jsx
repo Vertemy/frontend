@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { Page1 } from './pages'
+import { Page1, Navbar } from './pages'
 
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
       
   return (
     <>
+    <Navbar />
     <Page1 />
     </>
   )

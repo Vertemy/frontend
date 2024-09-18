@@ -1,622 +1,40 @@
-import { useState } from 'react'
-import './page1.css'
+import manl from "../assets/manl.png"
+import science from "../assets/science.svg"
+import figma from "../assets/figma.svg"
+import angular from "../assets/angular.svg"
+import app from "../assets/app.jpeg"
+import ui from "../assets/uii.jpeg"
+import fullstack from "../assets/ful.jpeg"
+import softwere from "../assets/soft.jpeg"
+import datascience from "../assets/datascienec.jpeg"
+import cybers from "../assets/cyber.jpeg"
+import dev from "../assets/dev.jpeg"
+import web from "../assets/web.jpeg"
+import student from "../assets/student.jpeg"
+import my1 from "../assets/my1.jpg"
+import my2 from "../assets/my2.jpg"
+import my3 from "../assets/my3.jpg"
+import my4 from "../assets/my4.jpg"
 
-function Page1() {
-  const [count, setCount] = useState(0)
-      
+
+import Carousel from 'react-bootstrap/Carousel';
+
+
+
+
+
+
+
+import "./page1.css"
+
+
+
+
+const Page1 = () => {
   return (
-    <>
-   <div>
-  <header className="navbar-light navbar-sticky header-static">
-    {/* Nav START */}
-    <nav className="navbar navbar-expand-xl">
-      <div className="container-fluid px-3 px-xl-5">
-        {/* Logo START */}
-        <a className="navbar-brand" href="index.html">
-          <img className="light-mode-item navbar-brand-item" src="assets/images/logo.svg" alt="logo" />
-          <img className="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo" />
-        </a>
-        {/* Logo END */}
-        {/* Responsive navbar toggler */}
-        <button className="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-animation">
-            <span />
-            <span />
-            <span />
-          </span>
-        </button>
-        {/* Main navbar START */}
-        <div className="navbar-collapse w-100 collapse" id="navbarCollapse">
-          {/* Nav category menu START */}
-          <ul className="navbar-nav navbar-nav-scroll me-auto">
-            {/* Nav item 1 Demos */}
-            <li className="nav-item dropdown dropdown-menu-shadow-stacked">
-              <a className="nav-link bg-primary bg-opacity-10 rounded-3 text-primary px-3 py-3 py-xl-0" href="#" id="categoryMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i className="bi bi-ui-radios-grid me-2" /><span>Category</span></a>
-              <ul className="dropdown-menu" aria-labelledby="categoryMenu">
-                {/* Dropdown submenu */}
-                <li className="dropdown-submenu dropend">
-                  <a className="dropdown-item dropdown-toggle" href="#">Development</a>
-                  <ul className="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-                    {/* dropdown submenu open right */}
-                    <li className="dropdown-submenu dropend">
-                      <a className="dropdown-item dropdown-toggle" href="#">Web Development</a>
-                      <ul className="dropdown-menu" data-bs-popper="none">
-                        <li> <a className="dropdown-item" href="#">CSS</a> </li>
-                        <li> <a className="dropdown-item" href="#">JavaScript</a> </li>
-                        <li> <a className="dropdown-item" href="#">Angular</a> </li>
-                        <li> <a className="dropdown-item" href="#">PHP</a> </li>
-                        <li> <a className="dropdown-item" href="#">HTML</a> </li>
-                        <li> <a className="dropdown-item" href="#">React</a> </li>
-                      </ul>
-                    </li>
-                    <li> <a className="dropdown-item" href="#">Data Science</a> </li>
-                    <li> <a className="dropdown-item" href="#">Mobile Development</a> </li>
-                    <li> <a className="dropdown-item" href="#">Programing Language</a> </li>
-                    <li> <a className="dropdown-item" href="#">Software Testing</a> </li>
-                    <li> <a className="dropdown-item" href="#">Software Engineering</a> </li>
-                    <li> <a className="dropdown-item" href="#">Software Development Tools</a> </li>
-                  </ul>
-                </li>
-                <li> <a className="dropdown-item" href="#">Design</a></li>
-                {/* Dropdown submenu */}
-                <li className="dropdown-submenu dropend">
-                  <a className="dropdown-item dropdown-toggle" href="#">Marketing</a>
-                  <div className="dropdown-menu dropdown-menu-start dropdown-width-lg" data-bs-popper="none">
-                    <div className="row p-4">
-                      {/* Dropdown column item */}
-                      <div className="col-xl-6 col-xxl-4 mb-4 mb-xl-0">
-                        <h6 className="mb-0">Get started</h6>
-                        <hr /> {/* Divider */}
-                        <ul className="list-unstyled">
-                          <li> <a className="dropdown-item" href="#">Market Research</a> </li>
-                          <li> <a className="dropdown-item" href="#">Advertising</a> </li>
-                          <li> <a className="dropdown-item" href="#">Consumer Behavior</a> </li>
-                          <li> <a className="dropdown-item" href="#">Digital Marketing</a> </li>
-                          <li> <a className="dropdown-item" href="#">Marketing Ethics</a> </li>
-                          <li> <a className="dropdown-item" href="#">Social Media Marketing</a> </li>
-                          <li> <a className="dropdown-item" href="#">Public Relations</a> </li>
-                          <li> <a className="dropdown-item" href="#">Advertising</a> </li>
-                          <li> <a className="dropdown-item" href="#">Decision Science</a> </li>
-                          <li> <a className="dropdown-item" href="#">SEO</a> </li>
-                          <li> <a className="dropdown-item" href="#">Business Marketing</a> </li>
-                        </ul>
-                      </div>
-                      {/* Dropdown column item */}
-                      <div className="col-xl-6 col-xxl-4 mb-4 mb-xl-0">
-                        <h6 className="mb-0">Degree</h6>
-                        <hr /> {/* Divider */}
-                        {/* Dropdown item */}
-                        <div className="d-flex mb-4 position-relative">
-                          <img src="assets/images/client/uni-logo-01.svg" className="icon-md" alt />
-                          <div className="ms-3">
-                            <a className="stretched-link h6 mb-0" href="#">American Century University, New Mexico</a>
-                            <p className="mb-0 small">Bachelor of computer science</p>
-                          </div>
-                        </div>
-                        {/* Dropdown item */}
-                        <div className="d-flex mb-4 position-relative">
-                          <img src="assets/images/client/uni-logo-02.svg" className="icon-md" alt />
-                          <div className="ms-3">
-                            <a className="stretched-link h6 mb-0" href="#">Indiana College of - Bloomington</a>
-                            <p className="mb-0 small">Masters of computer science</p>
-                          </div>
-                        </div>
-                        {/* Dropdown item */}
-                        <div className="d-flex mb-4 position-relative">
-                          <img src="assets/images/client/uni-logo-03.svg" className="icon-md" alt />
-                          <div className="ms-3">
-                            <a className="stretched-link h6 mb-0" href="#">College of South Florida</a>
-                            <p className="mb-0 small">Medical science college</p>
-                          </div>
-                        </div>
-                        {/* Dropdown item */}
-                        <div className="d-flex mb-4 position-relative">
-                          <img src="assets/images/client/uni-logo-01.svg" className="icon-md" alt />
-                          <div className="ms-3">
-                            <a className="stretched-link h6 mb-0" href="#">Andeerson Campus</a>
-                            <p className="mb-0 small">Bachelor of computer science</p>
-                          </div>
-                        </div>
-                        {/* Dropdown item */}
-                        <div className="d-flex position-relative">
-                          <img src="assets/images/client/uni-logo-04.svg" className="icon-md" alt />
-                          <div className="ms-3">
-                            <a className="stretched-link h6 mb-0" href="#">University of South California</a>
-                            <p className="mb-0 small">Masters of business development</p>
-                          </div>
-                        </div>
-                      </div>
-                      {/* Dropdown column item */}
-                      <div className="col-xl-6 col-xxl-4">
-                        <h6 className="mb-0">Certificate</h6>
-                        <hr /> {/* Divider */}
-                        {/* Dropdown item */}
-                        <div className="d-flex mb-4 position-relative">
-                          <h2 className="mb-0"><i className="fab fa-fw fa-google text-google-icon" /></h2>
-                          <div className="ms-2">
-                            <a className="stretched-link h6 mb-0" href="#">Google SEO certificate</a>
-                            <p className="mb-0 small">No prerequisites</p>
-                          </div>
-                        </div>
-                        {/* Dropdown item */}
-                        <div className="d-flex mb-4 position-relative">
-                          <h2 className="mb-0"><i className="fab fa-fw fa-linkedin-in text-linkedin" /></h2>
-                          <div className="ms-2">
-                            <a className="stretched-link h6 mb-0" href="#">Business Development Executive(BDE)</a>
-                            <p className="mb-0 small">No prerequisites</p>
-                          </div>
-                        </div>
-                        {/* Dropdown item */}
-                        <div className="d-flex mb-4 position-relative">
-                          <h2 className="mb-0"><i className="fab fa-fw fa-facebook text-facebook" /></h2>
-                          <div className="ms-2">
-                            <a className="stretched-link h6 mb-0" href="#">Facebook social media marketing</a>
-                            <p className="mb-0 small">Expert advice</p>
-                          </div>
-                        </div>
-                        {/* Dropdown item */}
-                        <div className="d-flex mb-4 position-relative">
-                          <h2 className="mb-0"><i className="fas fa-fw fa-basketball-ball text-dribbble" /></h2>
-                          <div className="ms-2">
-                            <a className="stretched-link h6 mb-0" href="#">Creative graphics design</a>
-                            <p className="mb-0 small">No prerequisites</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    {/* Advertisement */}
-                    <div className="row">
-                      <div className="col-12">
-                        <div className="card bg-blue rounded-0 rounded-bottom p-3 position-relative overflow-hidden" style={{background: 'url(assets/images/pattern/05.png) no-repeat center center', backgroundSize: 'cover'}}>
-                          {/* SVG decoration */}
-                          <figure className="position-absolute bottom-0 end-0 mb-n4 d-none d-md-block">
-                            <svg width="92.6px" height="135.2px">	
-                              <path className="fill-white" d="M71.5,131.4c0.2,0.1,0.4,0.1,0.6-0.1c0,0,0.6-0.7,1.6-1.9c0.2-0.2,0.1-0.5-0.1-0.7c-0.2-0.2-0.5-0.1-0.7,0.1 c-1,1.2-1.6,1.8-1.6,1.8c-0.2,0.2-0.2,0.5,0,0.7C71.4,131.3,71.4,131.4,71.5,131.4z" />
-                              <path className="fill-white" d="M76,125.5c-0.2-0.2-0.3-0.5-0.1-0.7c1-1.4,1.9-2.8,2.8-4.2c0.1-0.2,0.4-0.3,0.7-0.2c0.2,0.1,0.3,0.4,0.2,0.7 c-0.9,1.4-1.8,2.9-2.8,4.2C76.6,125.6,76.3,125.6,76,125.5C76.1,125.5,76.1,125.5,76,125.5z M81.4,116.9 c-0.2-0.1-0.3-0.4-0.2-0.7c0.2-0.5,0.5-0.9,0.7-1.4c0.5-1.1,1-2.1,1.5-3.2c0.1-0.3,0.4-0.4,0.6-0.3c0.3,0.1,0.4,0.4,0.3,0.6 c-0.5,1.1-1,2.1-1.5,3.2c-0.2,0.5-0.5,0.9-0.7,1.4C81.9,117,81.6,117,81.4,116.9C81.4,116.9,81.4,116.9,81.4,116.9z M85.1,107.1 c0.5-1.6,1-3.2,1.3-4.8c0.1-0.3,0.3-0.4,0.6-0.4c0.3,0.1,0.4,0.3,0.4,0.6c-0.4,1.6-0.8,3.3-1.3,4.9c-0.1,0.3-0.4,0.4-0.6,0.3 c0,0,0,0-0.1,0C85.1,107.6,85,107.3,85.1,107.1z M47.3,83c-1.5-1.1-2.5-2.5-3.1-4.2c-0.1-0.3,0-0.5,0.3-0.6 c0.3-0.1,0.5,0,0.6,0.3c0.5,1.5,1.5,2.7,2.8,3.7c0.2,0.2,0.3,0.5,0.1,0.7C47.9,83.1,47.6,83.1,47.3,83C47.4,83,47.4,83,47.3,83z  M51.7,84.6c0-0.3,0.3-0.5,0.5-0.4c1.4,0.2,2.9-0.3,4.3-1.4c0.2-0.2,0.5-0.1,0.7,0.1c0.2,0.2,0.1,0.5-0.1,0.7 c-1.6,1.2-3.4,1.8-5,1.6c-0.1,0-0.1,0-0.2,0C51.8,85,51.7,84.8,51.7,84.6z M87.2,97.4c0.2-1.7,0.2-3.3,0.2-5 c0-0.3,0.2-0.5,0.5-0.5c0.3,0,0.5,0.2,0.5,0.5c0.1,1.7,0,3.4-0.2,5.1c0,0.3-0.3,0.5-0.5,0.4c-0.1,0-0.1,0-0.2,0 C87.3,97.8,87.1,97.6,87.2,97.4z M43.7,73.6c0.2-1.6,0.7-3.2,1.5-4.8l0.1-0.1c0.1-0.2,0.4-0.3,0.7-0.2c0,0,0,0,0,0 c0.2,0.1,0.3,0.4,0.2,0.7l-0.1,0.1c-0.7,1.5-1.2,3-1.4,4.5c0,0.3-0.3,0.5-0.6,0.4c-0.1,0-0.1,0-0.2,0 C43.8,74,43.7,73.8,43.7,73.6z M60,79.8c-0.2-0.1-0.3-0.5-0.1-0.7c0.4-0.6,0.8-1.3,1.1-2c0.4-0.8,0.7-1.6,1-2.4 c0.1-0.3,0.4-0.4,0.6-0.3c0.3,0.1,0.4,0.4,0.3,0.6c-0.3,0.9-0.7,1.7-1.1,2.5c-0.4,0.7-0.8,1.4-1.2,2.1C60.5,79.9,60.2,80,60,79.8 C60,79.9,60,79.8,60,79.8z M86.8,87.5c-0.3-1.6-0.7-3.2-1.2-4.8c-0.1-0.3,0.1-0.5,0.3-0.6c0.3-0.1,0.5,0.1,0.6,0.3 c0.5,1.6,1,3.3,1.2,4.9c0,0.3-0.1,0.5-0.4,0.6c-0.1,0-0.2,0-0.3,0C87,87.7,86.9,87.6,86.8,87.5z M48.2,65.1 c-0.2-0.2-0.2-0.5,0-0.7c1.2-1.3,2.5-2.4,3.9-3.4c0.2-0.1,0.5-0.1,0.7,0.1c0.1,0.2,0.1,0.5-0.1,0.7c-1.4,0.9-2.6,2-3.7,3.2 c-0.2,0.2-0.4,0.2-0.6,0.1C48.3,65.2,48.3,65.1,48.2,65.1z M63.3,70c0.3-1.6,0.5-3.3,0.5-4.9c0-0.3,0.2-0.5,0.5-0.5 c0.3,0,0.5,0.2,0.5,0.5c-0.1,1.7-0.2,3.4-0.5,5.1c0,0.3-0.3,0.4-0.6,0.4c0,0-0.1,0-0.1,0C63.3,70.4,63.2,70.2,63.3,70z M83.8,78 c-0.7-1.5-1.5-3-2.4-4.3c-0.1-0.2-0.1-0.5,0.1-0.7c0.2-0.1,0.5-0.1,0.7,0.2c0.9,1.4,1.7,2.9,2.5,4.4c0.1,0.2,0,0.5-0.2,0.7 c-0.1,0.1-0.3,0.1-0.4,0C83.9,78.2,83.8,78.1,83.8,78z M56.5,59.6c-0.1-0.3,0.1-0.5,0.4-0.6c1.7-0.4,3.4-0.5,5.2-0.3 c0.3,0,0.5,0.3,0.4,0.5c0,0.3-0.3,0.5-0.5,0.4c-1.7-0.2-3.3-0.1-4.8,0.3c-0.1,0-0.2,0-0.3,0C56.6,59.8,56.5,59.7,56.5,59.6z  M78.4,69.7c-1.1-1.3-2.2-2.5-3.4-3.6c-0.2-0.2-0.2-0.5,0-0.7c0.2-0.2,0.5-0.2,0.7,0c1.2,1.1,2.4,2.4,3.5,3.7 c0.2,0.2,0.1,0.5-0.1,0.7c-0.2,0.1-0.4,0.1-0.5,0.1C78.5,69.8,78.4,69.7,78.4,69.7z M63.6,60.1c-0.2-1.6-0.4-3.3-0.8-4.9 c-0.1-0.3,0.1-0.5,0.4-0.6c0.3-0.1,0.5,0.1,0.6,0.4c0.4,1.7,0.7,3.4,0.8,5c0,0.3-0.2,0.5-0.4,0.5c-0.1,0-0.2,0-0.3,0 C63.7,60.4,63.6,60.2,63.6,60.1z M71,63.1c-1.4-0.9-2.9-1.7-4.4-2.3c-0.3-0.1-0.4-0.4-0.3-0.6c0.1-0.3,0.4-0.4,0.6-0.3 c1.5,0.6,3.1,1.4,4.6,2.3c0.2,0.1,0.3,0.5,0.1,0.7C71.6,63.1,71.3,63.2,71,63.1C71.1,63.1,71.1,63.1,71,63.1z M61.3,50.4 c-0.6-1.5-1.3-3-2.1-4.5c-0.1-0.2-0.1-0.5,0.2-0.7c0.2-0.1,0.5-0.1,0.7,0.2c0.9,1.5,1.6,3.1,2.2,4.6c0.1,0.3,0,0.5-0.3,0.6 c-0.1,0.1-0.3,0-0.4,0C61.5,50.6,61.4,50.5,61.3,50.4z M56.5,41.8c-1-1.3-2.1-2.6-3.2-3.8c-0.2-0.2-0.2-0.5,0-0.7 c0.2-0.2,0.5-0.2,0.7,0c1.2,1.3,2.3,2.6,3.3,3.9c0.2,0.2,0.1,0.5-0.1,0.7c-0.2,0.1-0.4,0.1-0.5,0C56.6,41.9,56.5,41.8,56.5,41.8z  M49.7,34.5c-1.2-1.1-2.5-2.1-3.9-3.2c-0.2-0.2-0.3-0.5-0.1-0.7c0.2-0.2,0.5-0.3,0.7-0.1c1.4,1,2.7,2.1,3.9,3.2 c0.2,0.2,0.2,0.5,0,0.7c-0.2,0.2-0.4,0.2-0.6,0.1C49.7,34.6,49.7,34.5,49.7,34.5z M41.7,28.5c-1.4-0.9-2.8-1.8-4.3-2.6 c-0.2-0.1-0.3-0.4-0.2-0.7c0.1-0.2,0.4-0.3,0.7-0.2c1.5,0.8,2.9,1.7,4.3,2.6c0.2,0.1,0.3,0.5,0.1,0.7 C42.2,28.6,42,28.6,41.7,28.5C41.7,28.5,41.7,28.5,41.7,28.5z" />
-                              <path className="fill-white" d="M30.7,22.6C30.7,22.6,30.7,22.6,30.7,22.6c0,0,0.9,0.4,2.3,1c0.2,0.1,0.5,0,0.7-0.2c0.1-0.2,0-0.5-0.2-0.7 c0,0,0,0,0,0c-1.4-0.7-2.2-1-2.3-1c-0.3-0.1-0.5,0-0.6,0.3C30.3,22.2,30.4,22.5,30.7,22.6z" />
-                              <path className="fill-warning" d="M22.6,23.6l-1.1-4.1c0,0-11.7-7.5-11.9-7.6c-0.1-0.2-4.9-6.5-4.9-6.5l8.2,3.5l12.2,8.4L22.6,23.6z" />
-                              <polygon className="fill-warning opacity-6" points="31.2,12.3 4.7,5.4 25.1,17.2" />
-                              <polygon className="fill-warning opacity-6" points="21.5,19.5 15,24.8 4.7,5.4 " />
-                            </svg>
-                          </figure>
-                          {/* Body */}
-                          <div className="card-body">
-                            {/* Title */}
-                            <h5 className="card-title text-white mb-2">Access 25K Online courses from 120 institutions, Start today!</h5>
-                            <p className="text-white text-opacity-75">Here is the description of premium features which will allow users to get benefits and save a lot of money</p>
-                            {/* Button */}
-                            <a href="#" className="btn btn-sm btn-dark mb-0">Purchase Premium</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li> <a className="dropdown-item" href="#">Music</a></li>
-                <li> <a className="dropdown-item" href="#">Lifestyle</a></li>
-                <li> <a className="dropdown-item" href="#">IT &amp; software</a></li>
-                <li> <a className="dropdown-item" href="#">Personal development</a></li>
-                <li> <a className="dropdown-item" href="#">Health &amp; fitness</a></li>
-                <li> <a className="dropdown-item" href="#">Teaching</a></li>
-                <li> <a className="dropdown-item" href="#">Social science</a></li>
-                <li> <a className="dropdown-item" href="#">Math &amp; logic</a></li>
-                <li> <hr className="dropdown-divider" /></li>
-                <li> <a className="dropdown-item bg-primary text-primary bg-opacity-10 rounded-2 mb-0" href="#">View all categories</a></li>
-              </ul>
-            </li>
-          </ul>
-          {/* Nav category menu END */}
-          {/* Nav Main menu START */}
-          <ul className="navbar-nav navbar-nav-scroll me-auto">
-            {/* Nav item 1 Demos */}
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle active" href="#" id="demoMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Demos</a>
-              <ul className="dropdown-menu" aria-labelledby="demoMenu">
-                <li> <a className="dropdown-item active" href="index.html">Home Default</a></li>
-                <li> <a className="dropdown-item" href="index-2.html">Home Education</a></li>
-                <li> <a className="dropdown-item" href="index-3.html">Home Academy</a></li>
-                <li> <a className="dropdown-item" href="index-4.html">Home Course</a></li>
-                <li> <a className="dropdown-item" href="index-5.html">Home University</a></li>
-                <li> <a className="dropdown-item" href="index-6.html">Home Kindergarten</a></li>
-                <li> <a className="dropdown-item" href="index-7.html">Home Landing</a></li>
-                <li> <a className="dropdown-item" href="index-8.html">Home Tutor</a></li>
-                <li> <a className="dropdown-item" href="index-9.html">Home School</a></li><li>
-                </li><li> <a className="dropdown-item" href="index-10.html">Home Abroad</a></li>
-                <li> <a className="dropdown-item" href="index-11.html">Home Workshop</a></li>
-              </ul>
-            </li>
-            {/* Nav item 2 Pages */}
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
-              <ul className="dropdown-menu" aria-labelledby="pagesMenu">
-                {/* Dropdown submenu */}
-                <li className="dropdown-submenu dropend">
-                  <a className="dropdown-item dropdown-toggle" href="#">Course</a>
-                  <ul className="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-                    <li> <a className="dropdown-item" href="course-categories.html">Course Categories</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="course-grid.html">Course Grid Classic</a></li>
-                    <li> <a className="dropdown-item" href="course-grid-2.html">Course Grid Minimal</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="course-list.html">Course List Classic</a></li>
-                    <li> <a className="dropdown-item" href="course-list-2.html">Course List Minimal</a></li>
-                    <li> <hr className="dropdown-divider" /></li>
-                    <li> <a className="dropdown-item" href="course-detail.html">Course Detail Classic</a></li>
-                    <li> <a className="dropdown-item" href="course-detail-min.html">Course Detail Minimal</a></li>
-                    <li> <a className="dropdown-item" href="course-detail-adv.html">Course Detail Advance</a></li>
-                    <li> <a className="dropdown-item" href="course-detail-module.html">Course Detail Module</a></li>
-                    <li> <a className="dropdown-item" href="course-video-player.html">Course Full Screen Video</a></li>
-                  </ul>
-                </li>
-                {/* Dropdown submenu */}
-                <li className="dropdown-submenu dropend">
-                  <a className="dropdown-item dropdown-toggle" href="#">About</a>
-                  <ul className="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-                    <li> <a className="dropdown-item" href="about.html">About Us</a></li>
-                    <li> <a className="dropdown-item" href="contact-us.html">Contact Us</a></li>
-                    <li> <a className="dropdown-item" href="blog-grid.html">Blog Grid</a></li>
-                    <li> <a className="dropdown-item" href="blog-masonry.html">Blog Masonry</a></li>
-                    <li> <a className="dropdown-item" href="blog-detail.html">Blog Detail</a></li>
-                    <li> <a className="dropdown-item" href="pricing.html">Pricing</a></li>
-                  </ul>
-                </li>
-                {/* Dropdown submenu */}
-                <li className="dropdown-submenu dropend">
-                  <a className="dropdown-item dropdown-toggle" href="#">Hero Banner</a>
-                  <ul className="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-                    <li> <a className="dropdown-item" href="docs/snippet-hero-12.html">Hero Form</a></li>
-                    <li> <a className="dropdown-item" href="docs/snippet-hero-13.html">Hero Vector</a></li>
-                    <li> <p className="dropdown-item mb-0">Coming soon....</p></li>
-                  </ul>
-                </li>
-                <li> <a className="dropdown-item" href="instructor-list.html">Instructor List</a></li>
-                <li> <a className="dropdown-item" href="instructor-single.html">Instructor Single</a></li>
-                <li> <a className="dropdown-item" href="become-instructor.html">Become an Instructor</a></li>
-                <li> <a className="dropdown-item" href="abroad-single.html">Abroad Single</a></li>
-                <li> <a className="dropdown-item" href="workshop-detail.html">Workshop Detail</a></li>
-                <li> <a className="dropdown-item" href="event-detail.html">Event Detail</a></li>
-                {/* Dropdown submenu */}
-                <li className="dropdown-submenu dropend">
-                  <a className="dropdown-item dropdown-toggle" href="#">Shop</a>
-                  <ul className="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-                    <li> <a className="dropdown-item" href="shop.html">Shop grid</a></li>
-                    <li> <a className="dropdown-item" href="shop-product-detail.html">Product detail</a></li>
-                    <li> <a className="dropdown-item" href="cart.html">Cart</a></li>
-                    <li> <a className="dropdown-item" href="checkout.html">Checkout</a></li>
-                    <li> <a className="dropdown-item" href="empty-cart.html">Empty Cart</a></li>
-                    <li> <a className="dropdown-item" href="wishlist.html">Wishlist</a></li>
-                  </ul>
-                </li>
-                {/* Dropdown submenu */}
-                <li className="dropdown-submenu dropend">
-                  <a className="dropdown-item dropdown-toggle" href="#">Help</a>
-                  <ul className="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-                    <li> <a className="dropdown-item" href="help-center.html">Help Center</a></li>
-                    <li> <a className="dropdown-item" href="help-center-detail.html">Help Center Single</a></li>
-                    <li> <a className="dropdown-item" href="faq.html">FAQs</a></li>
-                  </ul>
-                </li>
-                {/* Dropdown submenu */}
-                <li className="dropdown-submenu dropend">
-                  <a className="dropdown-item dropdown-toggle" href="#">Authentication</a>
-                  <ul className="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-                    <li> <a className="dropdown-item" href="sign-in.html">Sign In</a></li>
-                    <li> <a className="dropdown-item" href="sign-up.html">Sign Up</a></li>
-                    <li> <a className="dropdown-item" href="forgot-password.html">Forgot Password</a></li>
-                  </ul>
-                </li>
-                {/* Dropdown submenu */}
-                <li className="dropdown-submenu dropend">
-                  <a className="dropdown-item dropdown-toggle" href="#">Form</a>
-                  <ul className="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-                    <li> <a className="dropdown-item" href="request-demo.html">Request a demo</a></li>
-                    <li> <a className="dropdown-item" href="book-class.html">Book a Class</a></li>
-                    <li> <a className="dropdown-item" href="request-access.html">Free Access</a></li>
-                    <li> <a className="dropdown-item" href="university-admission-form.html">Admission Form</a></li>
-                  </ul>
-                </li>
-                {/* Dropdown submenu */}
-                <li className="dropdown-submenu dropend">
-                  <a className="dropdown-item dropdown-toggle" href="#">Specialty</a>
-                  <ul className="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-                    <li> <a className="dropdown-item" href="error-404.html">Error 404</a></li>
-                    <li> <a className="dropdown-item" href="coming-soon.html">Coming Soon</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            {/* Nav item 3 Account */}
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" id="accounntMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accounts</a>
-              <ul className="dropdown-menu" aria-labelledby="accounntMenu">
-                {/* Dropdown submenu */}
-                <li className="dropdown-submenu dropend">
-                  <a className="dropdown-item dropdown-toggle" href="#"><i className="fas fa-user-tie fa-fw me-1" />Instructor</a>
-                  <ul className="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-                    <li> <a className="dropdown-item" href="instructor-dashboard.html"><i className="bi bi-grid-fill fa-fw me-1" />Dashboard</a> </li>
-                    <li> <a className="dropdown-item" href="instructor-manage-course.html"><i className="bi bi-basket-fill fa-fw me-1" />Courses</a> </li>
-                    <li> <a className="dropdown-item" href="instructor-create-course.html"><i className="bi bi-file-earmark-plus-fill fa-fw me-1" />Create Course</a> </li>
-                    <li> <a className="dropdown-item" href="course-added.html"><i className="bi bi-file-check-fill fa-fw me-1" />Course Added</a> </li>
-                    <li> <a className="dropdown-item" href="instructor-quiz.html"><i className="bi bi-question-diamond fa-fw me-1" />Quiz</a> </li>
-                    <li> <a className="dropdown-item" href="instructor-earning.html"><i className="fas fa-chart-line fa-fw me-1" />Earnings</a> </li>
-                    <li> <a className="dropdown-item" href="instructor-studentlist.html"><i className="fas fa-user-graduate fa-fw me-1" />Students</a> </li>
-                    <li> <a className="dropdown-item" href="instructor-order.html"><i className="bi bi-cart-check-fill fa-fw me-1" />Orders</a> </li>
-                    <li> <a className="dropdown-item" href="instructor-review.html"><i className="bi bi-star-fill fa-fw me-1" />Reviews</a> </li>
-                    <li> <a className="dropdown-item" href="instructor-payout.html"><i className="fas fa-wallet fa-fw me-1" />Payout</a> </li>
-                  </ul>
-                </li>
-                {/* Dropdown submenu */}
-                <li className="dropdown-submenu dropend">
-                  <a className="dropdown-item dropdown-toggle" href="#"><i className="fas fa-user-graduate fa-fw me-1" />Student</a>
-                  <ul className="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-                    <li> <a className="dropdown-item" href="student-dashboard.html"><i className="bi bi-grid-fill fa-fw me-1" />Dashboard</a> </li>
-                    <li> <a className="dropdown-item" href="student-subscription.html"><i className="bi bi-card-checklist fa-fw me-1" />My Subscriptions</a> </li>
-                    <li> <a className="dropdown-item" href="student-course-list.html"><i className="bi bi-basket-fill fa-fw me-1" />Courses</a> </li>
-                    <li> <a className="dropdown-item" href="student-course-resume.html"><i className="far fa-fw fa-file-alt me-1" />Course Resume</a> </li>
-                    <li> <a className="dropdown-item" href="student-quiz.html"><i className="bi bi-question-diamond fa-fw me-1" />Quiz </a> </li>
-                    <li> <a className="dropdown-item" href="student-payment-info.html"><i className="bi bi-credit-card-2-front-fill fa-fw me-1" />Payment Info</a> </li>
-                    <li> <a className="dropdown-item" href="student-bookmark.html"><i className="fas bi-cart-check-fill fa-fw me-1" />Wishlist</a> </li>
-                  </ul>
-                </li>
-                <li> <a className="dropdown-item" href="admin-dashboard.html"><i className="fas fa-user-cog fa-fw me-1" />Admin</a> </li>
-                <li> <hr className="dropdown-divider" /></li>
-                <li> <a className="dropdown-item" href="instructor-edit-profile.html"><i className="fas fa-fw fa-edit me-1" />Edit Profile</a> </li>
-                <li> <a className="dropdown-item" href="instructor-setting.html"><i className="fas fa-fw fa-cog me-1" />Settings</a> </li>
-                <li> <a className="dropdown-item" href="instructor-delete-account.html"><i className="fas fa-fw fa-trash-alt me-1" />Delete Profile</a> </li>
-                <li> <hr className="dropdown-divider" /></li>
-                {/* Dropdown Level */}
-                <li className="dropdown-submenu dropend">
-                  <a className="dropdown-item dropdown-toggle" href="#">Dropdown levels</a>
-                  <ul className="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-                    {/* dropdown submenu open right */}
-                    <li className="dropdown-submenu dropend">
-                      <a className="dropdown-item dropdown-toggle" href="#">Dropdown (end)</a>
-                      <ul className="dropdown-menu" data-bs-popper="none">
-                        <li> <a className="dropdown-item" href="#">Dropdown item</a> </li>
-                        <li> <a className="dropdown-item" href="#">Dropdown item</a> </li>
-                      </ul>
-                    </li>
-                    <li> <a className="dropdown-item" href="#">Dropdown item</a> </li>
-                    {/* dropdown submenu open left */}
-                    <li className="dropdown-submenu dropstart">
-                      <a className="dropdown-item dropdown-toggle" href="#">Dropdown (start)</a>
-                      <ul className="dropdown-menu dropdown-menu-end" data-bs-popper="none">
-                        <li> <a className="dropdown-item" href="#">Dropdown item</a> </li>
-                        <li> <a className="dropdown-item" href="#">Dropdown item</a> </li>
-                      </ul>
-                    </li>
-                    <li> <a className="dropdown-item" href="#">Dropdown item</a> </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            {/* Nav item 4 Megamenu*/}
-            <li className="nav-item dropdown dropdown-fullwidth">
-              <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Megamenu</a>
-              <div className="dropdown-menu dropdown-menu-end" data-bs-popper="none">
-                <div className="row p-4">
-                  {/* Dropdown column item */}
-                  <div className="col-xl-6 col-xxl-3 mb-3">
-                    <h6 className="mb-0">Get started</h6>
-                    <hr />
-                    <ul className="list-unstyled">
-                      <li> <a className="dropdown-item" href="#">Market research</a> </li>
-                      <li> <a className="dropdown-item" href="#">Advertising</a> </li>
-                      <li> <a className="dropdown-item" href="#">Consumer behavior</a> </li>
-                      <li> <a className="dropdown-item" href="#">Digital marketing</a> </li>
-                      <li> <a className="dropdown-item" href="#">Marketing ethics</a> </li>
-                      <li> <a className="dropdown-item" href="#">Social media marketing</a> </li>
-                      <li> <a className="dropdown-item" href="#">Public relations</a> </li>
-                      <li> <a className="dropdown-item" href="#">Advertising</a> </li>
-                      <li> <a className="dropdown-item" href="#">Decision science</a> </li>
-                      <li> <a className="dropdown-item" href="#">SEO</a> </li>
-                      <li> <a className="dropdown-item" href="#">Business marketing</a> </li>
-                    </ul>
-                  </div>
-                  {/* Dropdown column item */}
-                  <div className="col-xl-6 col-xxl-3 mb-3">
-                    <h6 className="mb-0">Degree</h6>
-                    <hr />
-                    {/* Dropdown item */}
-                    <div className="mb-2 position-relative bg-primary-soft-hover rounded-2 transition-base p-3">
-                      <a className="stretched-link h6 mb-0" href="#">Contact management</a>
-                      <p className="mb-0 small text-truncate-2">Speedily say has suitable disposal add boy. On forth doubt miles of child.</p>
-                    </div>
-                    {/* Dropdown item */}
-                    <div className="mb-2 position-relative bg-primary-soft-hover rounded-2 transition-base p-3">
-                      <a className="stretched-link h6 mb-0" href="#">Sales pipeline</a>
-                      <p className="mb-0 small text-truncate-2">Speedily say has suitable disposal add boy. On forth doubt miles of child.</p>
-                    </div>
-                    {/* Dropdown item */}
-                    <div className="position-relative bg-primary-soft-hover rounded-2 transition-base p-3">
-                      <a className="stretched-link h6 mb-0" href="#">Security &amp; Permission</a>
-                      <p className="mb-0 small text-truncate-2">Speedily say has suitable disposal add boy. On forth doubt miles of child.</p>
-                    </div>
-                  </div>
-                  {/* Dropdown column item */}
-                  <div className="col-xl-6 col-xxl-3 mb-3">
-                    <h6 className="mb-0">Certificate</h6>
-                    <hr />
-                    {/* Dropdown item */}
-                    <div className="d-flex mb-4 position-relative">
-                      <h2 className="mb-0"><i className="fab fa-fw fa-google text-google-icon" /></h2>
-                      <div className="ms-2">
-                        <a className="stretched-link h6 mb-0" href="#">Google SEO certificate</a>
-                        <p className="mb-0 small">No prerequisites</p>
-                      </div>
-                    </div>
-                    {/* Dropdown item */}
-                    <div className="d-flex mb-4 position-relative">
-                      <h2 className="mb-0"><i className="fab fa-fw fa-linkedin-in text-linkedin" /></h2>
-                      <div className="ms-2">
-                        <a className="stretched-link h6 mb-0" href="#">Business Development Executive(BDE)</a>
-                        <p className="mb-0 small">No prerequisites</p>
-                      </div>
-                    </div>
-                    {/* Dropdown item */}
-                    <div className="d-flex mb-4 position-relative">
-                      <h2 className="mb-0"><i className="fab fa-fw fa-facebook text-facebook" /></h2>
-                      <div className="ms-2">
-                        <a className="stretched-link h6 mb-0" href="#">Facebook social media marketing</a>
-                        <p className="mb-0 small">Expert advice</p>
-                      </div>
-                    </div>
-                    {/* Dropdown item */}
-                    <div className="d-flex mb-4 position-relative">
-                      <h2 className="mb-0"><i className="fas fa-fw fa-basketball-ball text-dribbble" /></h2>
-                      <div className="ms-2">
-                        <a className="stretched-link h6 mb-0" href="#">Creative graphics design</a>
-                        <p className="mb-0 small">No prerequisites</p>
-                      </div>
-                    </div>
-                  </div>
-                  {/* Dropdown column item */}
-                  <div className="col-xl-6 col-xxl-3 mb-3">
-                    <h6 className="mb-0">Download Eduport</h6>
-                    <hr />
-                    {/* Image */}
-                    <img src="assets/images/element/14.svg" alt />
-                    {/* Download button */}
-                    <div className="row g-2 justify-content-center mt-3">
-                      {/* Google play store button */}
-                      <div className="col-6 col-sm-4 col-xxl-6">
-                        <a href="#"> <img src="assets/images/client/google-play.svg" className="btn-transition" alt="google-store" /> </a>
-                      </div>
-                      {/* App store button */}
-                      <div className="col-6 col-sm-4 col-xxl-6">
-                        <a href="#"> <img src="assets/images/client/app-store.svg" className="btn-transition" alt="app-store" /> </a>
-                      </div>
-                    </div>
-                  </div>
-                  {/* Action box */}
-                  <div className="col-12">
-                    <div className="alert alert-success alert-dismissible fade show mt-2 mb-0 rounded-3" role="alert">
-                      {/* Avatar */}
-                      <div className="avatar avatar-xs me-2">
-                        <img className="avatar-img rounded-circle" src="assets/images/avatar/09.jpg" alt="avatar" />
-                      </div>
-                      {/* Info */}
-                      The personality development class starts at 2:00 pm, click to <a href="#" className="alert-link">Join Now</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            {/* Nav item 5 link*/}
-            <li className="nav-item dropdown">
-              <a className="nav-link" href="#" id="advanceMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i className="fas fa-ellipsis-h" />
-              </a>
-              <ul className="dropdown-menu dropdown-menu-end min-w-auto" data-bs-popper="none">
-                <li> 
-                  <a className="dropdown-item" href="https://support.webestica.com/" target="_blank">
-                    <i className="text-warning fa-fw bi bi-life-preserver me-2" />Support
-                  </a> 
-                </li>
-                <li> 
-                  <a className="dropdown-item" href="docs/index.html" target="_blank">
-                    <i className="text-danger fa-fw bi bi-card-text me-2" />Documentation
-                  </a> 
-                </li>
-                <li> <hr className="dropdown-divider" /></li>
-                <li> 
-                  <a className="dropdown-item" href="rtl/index.html" target="_blank">
-                    <i className="text-info fa-fw bi bi-toggle-off me-2" />RTL demo
-                  </a> 
-                </li>
-                <li> 
-                  <a className="dropdown-item" href="https://themes.getbootstrap.com/store/webestica/" target="_blank">
-                    <i className="text-success fa-fw bi bi-cloud-download-fill me-2" />Buy Eduport!
-                  </a> 
-                </li>
-                <li> <hr className="dropdown-divider" /></li>
-                <li> 
-                  <a className="dropdown-item" href="docs/alerts.html" target="_blank">
-                    <i className="text-orange fa-fw bi bi-puzzle-fill me-2" />Components
-                  </a> 
-                </li>
-                <li> 
-                  <a className="dropdown-item" href="docs/snippets.html">
-                    <i className="text-purple fa-fw bi bi-stickies-fill me-2" />Snippets
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          {/* Nav Main menu END */}
-          {/* Nav Search START */}
-          <div className="nav my-3 my-xl-0 px-4 flex-nowrap align-items-center">
-            <div className="nav-item w-100">
-              <form className="position-relative">
-                <input className="form-control pe-5 bg-transparent" type="search" placeholder="Search" aria-label="Search" />
-                <button className="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
-                  <i className="fas fa-search fs-6 " />
-                </button>
-              </form>
-            </div>
-          </div>
-          {/* Nav Search END */}
-        </div>
-        {/* Main navbar END */}
-        {/* Profile START */}
-        <div className="dropdown ms-1 ms-lg-0">
-          <a className="avatar avatar-sm p-0" href="#" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
-            <img className="avatar-img rounded-circle" src="assets/images/avatar/01.jpg" alt="avatar" />
-          </a>
-          <ul className="dropdown-menu dropdown-animation dropdown-menu-end shadow pt-3" aria-labelledby="profileDropdown">
-            {/* Profile info */}
-            <li className="px-3 mb-3">
-              <div className="d-flex align-items-center">
-                {/* Avatar */}
-                <div className="avatar me-3">
-                  <img className="avatar-img rounded-circle shadow" src="assets/images/avatar/01.jpg" alt="avatar" />
-                </div>
-                <div>
-                  <a className="h6" href="#">Lori Ferguson</a>
-                  <p className="small m-0">example@gmail.com</p>
-                </div>
-              </div>
-            </li>
-            <li> <hr className="dropdown-divider" /></li>
-            {/* Links */}
-            <li><a className="dropdown-item" href="#"><i className="bi bi-person fa-fw me-2" />Edit Profile</a></li>
-            <li><a className="dropdown-item" href="#"><i className="bi bi-gear fa-fw me-2" />Account Settings</a></li>
-            <li><a className="dropdown-item" href="#"><i className="bi bi-info-circle fa-fw me-2" />Help</a></li>
-            <li><a className="dropdown-item bg-danger-soft-hover" href="#"><i className="bi bi-power fa-fw me-2" />Sign Out</a></li>
-            <li> <hr className="dropdown-divider" /></li>
-            {/* Dark mode options START */}
-            <li>
-              <div className="bg-light dark-mode-switch theme-icon-active d-flex align-items-center p-1 rounded mt-2">
-                <button type="button" className="btn btn-sm mb-0" data-bs-theme-value="light">
-                  <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="currentColor" className="bi bi-sun fa-fw mode-switch" viewBox="0 0 16 16">
-                    <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
-                    <use href="#" />
-                  </svg> Light
-                </button>
-                <button type="button" className="btn btn-sm mb-0" data-bs-theme-value="dark">
-                  <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="currentColor" className="bi bi-moon-stars fa-fw mode-switch" viewBox="0 0 16 16">
-                    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z" />
-                    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
-                    <use href="#" />
-                  </svg> Dark
-                </button>
-                <button type="button" className="btn btn-sm mb-0 active" data-bs-theme-value="auto">
-                  <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="currentColor" className="bi bi-circle-half fa-fw mode-switch" viewBox="0 0 16 16">
-                    <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
-                    <use href="#" />
-                  </svg> Auto
-                </button>
-              </div>
-            </li> 
-            {/* Dark mode options END*/}
-          </ul>
-        </div>
-        {/* Profile START */}
-      </div>
-    </nav>
-    {/* Nav END */}
-  </header>
-  {/* Header END */}
+<div>
+
+
   {/* **************** MAIN CONTENT START **************** */}
   <main>
     {/* =======================
@@ -765,7 +183,7 @@ Main Banner START */}
               </span>
             </h1>
             {/* Content */}
-            <p className="my-4 lead">Online learning and teaching marketplace with 5K+ courses &amp; 10M students. Taught by experts to help you acquire new skills.</p>
+            <p className="my-4 lead">Explore an online learning and teaching marketplace with 5,000+ expert-led courses. Learn new skills from industry professionals and advance your career with flexible, affordable education options.</p>
             {/* Info */}
             <ul className="list-inline position-relative justify-content-center justify-content-lg-start mb-4">
               <li className="list-inline-item me-2"> <i className="bi bi-patch-check-fill h6 me-1" />Learn with experts</li>
@@ -789,8 +207,7 @@ Main Banner START */}
           <div className="col-lg-7 col-xl-6 text-center position-relative">
             {/* SVG decoration */}
             <figure className="position-absolute bottom-0 start-50 translate-middle-x mt-4 mb-0">
-              <svg className="pt-5 pt-sm-0" width="550px" height="538px" viewBox="0 0 554 544" style={{enableBackground: 'new 0 0 554 544'}} xmlSpace="preserve">
-                <path className="fill-blue" d="M423.3,77.2c49.5,32.5,100.4,67.2,118.4,114.5s3.5,107.1-15.4,165.7c-18.7,58.6-41.8,116.1-84,148.6 c-42.5,32.8-104.2,40.2-163.8,37.3c-59.5-3.2-116.8-17.1-164.7-47.9c-48.3-30.6-87.2-78.2-102-131.6C-3,310.5,6.6,251,25.3,194.7 C43.6,138,70.7,84.3,114.1,49.5C157.2,14.8,216.7-1,270.8,6.4C324.8,14.2,373.4,44.7,423.3,77.2z" />
+            <svg className="pt-5 pt-sm-0" width="550px" height="538px" viewBox="0 0 554 544"  xmlSpace="preserve">                <path className="fill-blue" d="M423.3,77.2c49.5,32.5,100.4,67.2,118.4,114.5s3.5,107.1-15.4,165.7c-18.7,58.6-41.8,116.1-84,148.6 c-42.5,32.8-104.2,40.2-163.8,37.3c-59.5-3.2-116.8-17.1-164.7-47.9c-48.3-30.6-87.2-78.2-102-131.6C-3,310.5,6.6,251,25.3,194.7 C43.6,138,70.7,84.3,114.1,49.5C157.2,14.8,216.7-1,270.8,6.4C324.8,14.2,373.4,44.7,423.3,77.2z" />
               </svg>
             </figure>
             {/* SVG decoration */}
@@ -820,13 +237,13 @@ Main Banner START */}
             </figure>
             {/* Icon logos START */}
             <div className="p-2 bg-white shadow rounded-3 position-absolute top-50 start-0 translate-middle-y mt-n7 d-none d-sm-block">
-              <img src="assets/images/client/science.svg" alt="Icon" />
+              <img src={science} alt="science" />
             </div>
             <div className="p-2 bg-white shadow rounded-3 position-absolute top-0 end-0 me-5">
-              <img src="assets/images/client/angular.svg" alt="Icon" />
+              <img src={angular} alt="Icon" />
             </div>
             <div className="p-2 bg-white shadow rounded-3 position-absolute top-50 end-0 translate-middle-y mt-5 ms-5 d-none d-lg-block z-index-9">
-              <img src="assets/images/client/figma.svg" alt="Icon" />
+              <img src={figma} alt="Icon" />
             </div>
             {/* Icon logos END */}
             {/* Congratulations message */}
@@ -842,32 +259,10 @@ Main Banner START */}
               </div>
             </div>
             {/* Active student */} 
-            <div className="p-3 bg-success d-inline-block rounded-4 shadow-lg position-absolute top-50 end-0 translate-middle-y mt-n7 z-index-1 d-none d-md-block" style={{background: 'url(assets/images/pattern/01.png) no-repeat center center', backgroundSize: 'cover'}}>
-              <p className="text-white">Our daily new students</p>
-              {/* Avatar group */}
-              <ul className="avatar-group mb-0">
-                <li className="avatar avatar-sm">
-                  <img className="avatar-img rounded-circle border-white" src="assets/images/avatar/01.jpg" alt="avatar" />
-                </li>
-                <li className="avatar avatar-sm">
-                  <img className="avatar-img rounded-circle border-white" src="assets/images/avatar/02.jpg" alt="avatar" />
-                </li>
-                <li className="avatar avatar-sm">
-                  <img className="avatar-img rounded-circle border-white" src="assets/images/avatar/03.jpg" alt="avatar" />
-                </li>
-                <li className="avatar avatar-sm">
-                  <img className="avatar-img rounded-circle border-white" src="assets/images/avatar/04.jpg" alt="avatar" />
-                </li>
-                <li className="avatar avatar-sm">
-                  <div className="avatar-img rounded-circle border-white bg-primary">
-                    <span className="text-white position-absolute top-50 start-50 translate-middle small">1K+</span>
-                  </div>
-                </li>
-              </ul>
-            </div>
+             
             {/* Image */}
             <div className="position-relative ms-sm-4">
-              <img src="assets/images/element/07.png" alt />
+                  <img src={ manl } alt="Image 07" />
             </div>
           </div>
           {/* Right content END */}
@@ -954,7 +349,7 @@ Popular course START */}
         <ul className="nav nav-pills nav-pills-bg-soft justify-content-sm-center mb-4 px-3" id="course-pills-tab" role="tablist">
           {/* Tab item */}
           <li className="nav-item me-2 me-sm-5">
-            <button className="nav-link mb-2 mb-md-0 active" id="course-pills-tab-1" data-bs-toggle="pill" data-bs-target="#course-pills-tabs-1" type="button" role="tab" aria-controls="course-pills-tabs-1" aria-selected="false">Web Design</button>
+            <button className="nav-link mb-2 mb-md-0 active" id="course-pills-tab-1" data-bs-toggle="pill" data-bs-target="#course-pills-tabs-1" type="button" role="tab" aria-controls="course-pills-tabs-1" aria-selected="false">Popular courses</button>
           </li>
           {/* Tab item */}
           <li className="nav-item me-2 me-sm-5">
@@ -983,7 +378,7 @@ Popular course START */}
               <div className="col-sm-6 col-lg-4 col-xl-3">
                 <div className="card shadow h-100">
                   {/* Image */}
-                  <img src="assets/images/courses/4by3/08.jpg" className="card-img-top" alt="course image" />
+                  <img src={softwere} className="card-img-top" alt="course image" />
                   {/* Card body */}
                   <div className="card-body pb-0">
                     {/* Badge and favorite */}
@@ -992,8 +387,8 @@ Popular course START */}
                       <a href="#" className="h6 mb-0"><i className="far fa-heart" /></a>
                     </div>
                     {/* Title */}
-                    <h5 className="card-title fw-normal"><a href="#">Sketch from A to Z: for app designer</a></h5>
-                    <p className="mb-2 text-truncate-2">Proposal indulged no do sociable he throwing settling.</p>
+                    <h5 className="card-title fw-normal"><a href="#"> from A to Z: Softwere Engineer</a></h5>
+                    <p className="mb-2 text-truncate-2">Unlock your potential and build the future with our comprehensive Software Engineering course—where coding meets innovation!.</p>
                     {/* Rating star */}
                     <ul className="list-inline mb-0">
                       <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
@@ -1019,7 +414,7 @@ Popular course START */}
               <div className="col-sm-6 col-lg-4 col-xl-3">
                 <div className="card shadow h-100">
                   {/* Image */}
-                  <img src="assets/images/courses/4by3/02.jpg" className="card-img-top" alt="course image" />
+                  <img src={datascience} className="card-img-top" alt="course image" />
                   <div className="card-body pb-0">
                     {/* Badge and favorite */}
                     <div className="d-flex justify-content-between mb-2">
@@ -1027,8 +422,8 @@ Popular course START */}
                       <a href="#" className="text-danger"><i className="fas fa-heart" /></a>
                     </div>
                     {/* Title */}
-                    <h5 className="card-title fw-normal"><a href="#">Graphic Design Masterclass</a></h5>
-                    <p className="mb-2 text-truncate-2">Rooms oh fully taken by worse do Points afraid but may end Rooms Points afraid but may end Rooms</p>
+                    <h5 className="card-title fw-normal"><a href="#">Data Science  Masterclass</a></h5>
+                    <p className="mb-2 text-truncate-2">Transform data into insights and drive innovation with our cutting-edge Data Science course—your future in analytics starts here!</p>
                     {/* Rating star */}
                     <ul className="list-inline mb-0">
                       <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
@@ -1054,7 +449,7 @@ Popular course START */}
               <div className="col-sm-6 col-lg-4 col-xl-3">
                 <div className="card shadow h-100">
                   {/* Image */}
-                  <img src="assets/images/courses/4by3/03.jpg" className="card-img-top" alt="course image" />
+                  <img src={fullstack} className="card-img-top" alt="course image" />
                   <div className="card-body pb-0">
                     {/* Badge and favorite */}
                     <div className="d-flex justify-content-between mb-2">
@@ -1062,8 +457,8 @@ Popular course START */}
                       <a href="#" className="h6 fw-light mb-0"><i className="far fa-heart" /></a>
                     </div>
                     {/* Title */}
-                    <h5 className="card-title fw-normal"><a href="#">Create a Design System in Figma</a></h5>
-                    <p className="mb-2 text-truncate-2">Rooms oh fully taken by worse do. Points afraid but may end afraid but may end.</p>
+                    <h5 className="card-title fw-normal"><a href="#">Become a Fullstack Developer</a></h5>
+                    <p className="mb-2 text-truncate-2">Master the art of building web applications from front to back—become a versatile Fullstack Developer and shape the future of the web!</p>
                     {/* Rating star */}
                     <ul className="list-inline mb-0">
                       <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
@@ -1089,7 +484,7 @@ Popular course START */}
               <div className="col-sm-6 col-lg-4 col-xl-3">
                 <div className="card shadow h-100">
                   {/* Image */}
-                  <img src="assets/images/courses/4by3/07.jpg" className="card-img-top" alt="course image" />
+                  <img src={ui} className="card-img-top" alt="course image" />
                   <div className="card-body pb-0">
                     {/* Badge and favorite */}
                     <div className="d-flex justify-content-between mb-2">
@@ -1097,8 +492,8 @@ Popular course START */}
                       <a href="#" className="text-danger"><i className="fas fa-heart" /></a>
                     </div>
                     {/* Title */}
-                    <h5 className="card-title fw-normal"><a href="#">Deep Learning with React-Native </a></h5>
-                    <p className="mb-2 text-truncate-2">Far advanced settling say finished raillery. Offered chiefly farther</p>
+                    <h5 className="card-title fw-normal"><a href="#">Website Design Masterclass </a></h5>
+                    <p className="mb-2 text-truncate-2">Design stunning, user-friendly websites that captivate and convert—unleash your creativity as a Website Designer!</p>
                     {/* Rating star */}
                     <ul className="list-inline mb-0">
                       <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
@@ -1124,7 +519,7 @@ Popular course START */}
               <div className="col-sm-6 col-lg-4 col-xl-3">
                 <div className="card shadow h-100">
                   {/* Image */}
-                  <img src="assets/images/courses/4by3/11.jpg" className="card-img-top" alt="course image" />
+                  <img src={ cybers  } className="card-img-top" alt="course image" />
                   <div className="card-body pb-0">
                     {/* Badge and favorite */}
                     <div className="d-flex justify-content-between mb-2">
@@ -1132,8 +527,8 @@ Popular course START */}
                       <a href="#" className="text-danger"><i className="fas fa-heart" /></a>
                     </div>
                     {/* Title */}
-                    <h5 className="card-title fw-normal"><a href="#">Build Responsive Websites with HTML</a></h5>
-                    <p className="mb-2 text-truncate-2">Far advanced settling say finished raillery. Offered chiefly farther</p>
+                    <h5 className="card-title fw-normal"><a href="#">Cyber Security</a></h5>
+                    <p className="mb-2 text-truncate-2">Protect, defend, and secure the digital world—become the guardian of tomorrow with a Cybersecurity course!</p>
                     {/* Rating star */}
                     <ul className="list-inline mb-0">
                       <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
@@ -1159,7 +554,7 @@ Popular course START */}
               <div className="col-sm-6 col-lg-4 col-xl-3">
                 <div className="card shadow h-100">
                   {/* Image */}
-                  <img src="assets/images/courses/4by3/12.jpg" className="card-img-top" alt="course image" />
+                  <img src={app} className="card-img-top" alt="course image" />
                   <div className="card-body pb-0">
                     {/* Badge and favorite */}
                     <div className="d-flex justify-content-between mb-2">
@@ -1167,8 +562,8 @@ Popular course START */}
                       <a href="#" className="h6 fw-light mb-0"><i className="far fa-heart" /></a>
                     </div>
                     {/* Title */}
-                    <h5 className="card-title fw-normal"><a href="#">Build Websites with CSS</a></h5>
-                    <p className="text-truncate-2 mb-2">Far advanced settling say finished raillery. Offered chiefly farther</p>
+                    <h5 className="card-title fw-normal"><a href="#">Master Moblie Development</a></h5>
+                    <p className="text-truncate-2 mb-2">Transform ideas into powerful apps—unlock your potential with a Mobile Development course!</p>
                     {/* Rating star */}
                     <ul className="list-inline mb-0">
                       <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
@@ -1194,7 +589,7 @@ Popular course START */}
               <div className="col-sm-6 col-lg-4 col-xl-3">
                 <div className="card shadow h-100">
                   {/* Image */}
-                  <img src="assets/images/courses/4by3/04.jpg" className="card-img-top" alt="course image" />
+                  <img src={dev} className="card-img-top" alt="course image" />
                   <div className="card-body pb-0">
                     {/* Badge and favorite */}
                     <div className="d-flex justify-content-between mb-2">
@@ -1202,8 +597,8 @@ Popular course START */}
                       <a href="#" className="text-danger"><i className="fas fa-heart" /></a>
                     </div>
                     {/* Title */}
-                    <h5 className="card-title fw-normal"><a href="#">Learn Invision</a></h5>
-                    <p className="mb-2">Arrived off she elderly beloved him Course regard to up he hardly.</p>
+                    <h5 className="card-title fw-normal"><a href="#">Learn DevOps</a></h5>
+                    <p className="mb-2">Learn automation tools like Docker, Kubernetes, Jenkins, and CI/CD pipelines for continuous integration and deployment.</p>
                     {/* Rating star */}
                     <ul className="list-inline mb-0">
                       <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
@@ -1229,7 +624,7 @@ Popular course START */}
               <div className="col-sm-6 col-lg-4 col-xl-3">
                 <div className="card shadow h-100">
                   {/* Image */}
-                  <img src="assets/images/courses/4by3/09.jpg" className="card-img-top" alt="course image" />
+                  <img src={web} className="card-img-top" alt="course image" />
                   <div className="card-body pb-0">
                     {/* Badge and favorite */}
                     <div className="d-flex justify-content-between mb-2">
@@ -1237,8 +632,8 @@ Popular course START */}
                       <a href="#" className="h6 fw-light mb-0"><i className="far fa-heart" /></a>
                     </div>
                     {/* Title */}
-                    <h5 className="card-title fw-normal"><a href="#">JavaScript: Full Understanding</a></h5>
-                    <p className="text-truncate-2 mb-2">Far advanced settling say finished raillery. Offered chiefly farther.</p>
+                    <h5 className="card-title fw-normal"><a href="#">Blockchain and Web3 Development</a></h5>
+                    <p className="text-truncate-2 mb-2">Focus on decentralized applications (dApps), smart contracts, and blockchain technologies using Ethereum, Solidity, and more.</p>
                     {/* Rating star */}
                     <ul className="list-inline mb-0">
                       <li className="list-inline-item me-0 small"><i className="fas fa-star text-warning" /></li>
@@ -1799,8 +1194,8 @@ Action box START */}
         {/* SVG decoration END */}
         <div className="row">
           <div className="col-12">
-            <div className="bg-info p-4 p-sm-5 rounded-3">
-              <div className="row position-relative">
+            <div className=" p-4 p-sm-5 rounded-3  box-teach">
+              <div className="row position-relative  ">
                 {/* Svg decoration */}
                 <figure className="fill-white opacity-1 position-absolute top-50 start-0 translate-middle-y">
                   <svg width="141px" height="141px">
@@ -1808,12 +1203,12 @@ Action box START */}
                   </svg>
                 </figure>
                 {/* Action box */}
-                <div className="col-11 mx-auto position-relative">
+                <div className="col-11 mx-auto position-relative ">
                   <div className="row align-items-center">
                     {/* Title */}
                     <div className="col-lg-7">
                       <h3 className="text-white">Become an Instructor!</h3>
-                      <p className="text-white mb-3 mb-lg-0">Speedily say has suitable disposal add boy. On forth doubt miles of child. Exercise joy man children rejoiced. Yet uncommonly his ten who diminution astonished.</p>
+                      <p className="text-white mb-3 mb-lg-0">Join Vertemy Academy as a tutor and inspire the next generation of learners! Share your knowledge, shape minds, and make a lasting impact. Apply today and help students excel</p>
                     </div>
                     {/* Content and input */}
                     <div className="col-lg-5 text-lg-end">
@@ -1836,242 +1231,68 @@ Trending courses START */}
         {/* Title */}
         <div className="row mb-4">
           <div className="col-lg-8 mx-auto text-center">
-            <h2 className="fs-1">Our Trending Courses</h2>
+            <h2 className="fs-1">Enroll in a Cohort Course Today</h2>
             <p className="mb-0">Check out most 🔥 courses in the market</p>
           </div>
         </div>
         <div className="row">
           {/* Slider START */}
-          <div className="tiny-slider arrow-round arrow-blur arrow-hover">
-            <div className="tiny-slider-inner pb-1" data-autoplay="true" data-arrow="true" data-edge={2} data-dots="false" data-items={3} data-items-lg={2} data-items-sm={1}>
-              {/* Card item START */}
-              <div>
-                <div className="card action-trigger-hover border bg-transparent">
-                  {/* Image */}
-                  <img src="assets/images/courses/4by3/14.jpg" className="card-img-top" alt="course image" />
-                  {/* Ribbon */}
-                  <div className="ribbon mt-3"><span>Free</span></div>
-                  {/* Card body */}
-                  <div className="card-body pb-0">
-                    {/* Badge and favorite */}
-                    <div className="d-flex justify-content-between mb-3">
-                      <span className="hstack gap-2">
-                        <a href="#" className="badge bg-primary bg-opacity-10 text-primary">Design</a>
-                        <a href="#" className="badge text-bg-dark">Beginner</a>
-                      </span>
-                      <a href="#" className="h6 fw-light mb-0"><i className="far fa-bookmark" /></a>
-                    </div>
-                    {/* Title */}
-                    <h5 className="card-title"><a href="#">The complete Digital Marketing Course - 8 Course in 1</a></h5>
-                    {/* Rating */}
-                    <div className="d-flex justify-content-between mb-2">
-                      <div className="hstack gap-2">
-                        <p className="text-warning m-0">4.5<i className="fas fa-star text-warning ms-1" /></p>
-                        <span className="small">(6500)</span>
-                      </div>
-                      <div className="hstack gap-2">
-                        <p className="h6 fw-light mb-0 m-0">6500</p>
-                        <span className="small">(Student)</span>
-                      </div>
-                    </div>
-                    {/* Time */}
-                    <div className="hstack gap-3">
-                      <span className="h6 fw-light mb-0"><i className="far fa-clock text-danger me-2" />6h 56m</span>
-                      <span className="h6 fw-light mb-0"><i className="fas fa-table text-orange me-2" />82 lectures</span>
-                    </div>
-                  </div>
-                  {/* Card footer */}
-                  <div className="card-footer pt-0 bg-transparent">
-                    <hr />
-                    {/* Avatar and Price */}
-                    <div className="d-flex justify-content-between align-items-center">
-                      {/* Avatar */}
-                      <div className="d-flex align-items-center">
-                        <div className="avatar avatar-sm">
-                          <img className="avatar-img rounded-1" src="assets/images/avatar/10.jpg" alt="avatar" />
-                        </div>
-                        <p className="mb-0 ms-2"><a href="#" className="h6 fw-light mb-0">Larry Lawson</a></p>
-                      </div>
-                      {/* Price */}
-                      <div>
-                        <h4 className="text-success mb-0 item-show">Free</h4>
-                        <a href="#" className="btn btn-sm btn-success-soft item-show-hover"><i className="fas fa-shopping-cart me-2" />Add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Card item END */}
-              {/* Card item START */}
-              <div>
-                <div className="card action-trigger-hover border bg-transparent">
-                  {/* Image */}
-                  <img src="assets/images/courses/4by3/15.jpg" className="card-img-top" alt="course image" />
-                  {/* Card body */}
-                  <div className="card-body pb-0">
-                    {/* Badge and favorite */}
-                    <div className="d-flex justify-content-between mb-3">
-                      <span className="hstack gap-2">
-                        <a href="#" className="badge bg-primary bg-opacity-10 text-primary">Development</a>
-                        <a href="#" className="badge text-bg-dark">All level</a>
-                      </span>
-                      <a href="#" className="h6 fw-light mb-0"><i className="far fa-bookmark" /></a>
-                    </div>
-                    {/* Title */}
-                    <h5 className="card-title"><a href="#">Angular – The Complete Guide (2021 Edition)</a></h5>
-                    {/* Rating */}
-                    <div className="d-flex justify-content-between mb-2">
-                      <div className="hstack gap-2">
-                        <p className="text-warning m-0">4.0<i className="fas fa-star text-warning ms-1" /></p>
-                        <span className="small">(3500)</span>
-                      </div>
-                      <div className="hstack gap-2">
-                        <p className="h6 fw-light mb-0 m-0">4500</p>
-                        <span className="small">(Student)</span>
-                      </div>
-                    </div>
-                    {/* Time */}
-                    <div className="hstack gap-3">
-                      <span className="h6 fw-light mb-0"><i className="far fa-clock text-danger me-2" />12h 45m</span>
-                      <span className="h6 fw-light mb-0"><i className="fas fa-table text-orange me-2" />65 lectures</span>
-                    </div>
-                  </div>
-                  {/* Card footer */}
-                  <div className="card-footer pt-0 bg-transparent">
-                    <hr />
-                    {/* Avatar and Price */}
-                    <div className="d-flex justify-content-between align-items-center">
-                      {/* Avatar */}
-                      <div className="d-flex align-items-center">
-                        <div className="avatar avatar-sm">
-                          <img className="avatar-img rounded-1" src="assets/images/avatar/04.jpg" alt="avatar" />
-                        </div>
-                        <p className="mb-0 ms-2"><a href="#" className="h6 fw-light mb-0">Billy Vasquez</a></p>
-                      </div>
-                      {/* Price */}
-                      <div>
-                        <h4 className="text-success mb-0 item-show">$255</h4>
-                        <a href="#" className="btn btn-sm btn-success-soft item-show-hover"><i className="fas fa-shopping-cart me-2" />Add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Card item END */}
-              {/* Card item START */}
-              <div>
-                <div className="card action-trigger-hover border bg-transparent">
-                  {/* Image */}
-                  <img src="assets/images/courses/4by3/17.jpg" className="card-img-top" alt="course image" />
-                  {/* Card body */}
-                  <div className="card-body pb-0">
-                    {/* Badge and favorite */}
-                    <div className="d-flex justify-content-between mb-3">
-                      <span className="hstack gap-2">
-                        <a href="#" className="badge bg-primary bg-opacity-10 text-primary">Design</a>
-                        <a href="#" className="badge text-bg-dark">Beginner</a>
-                      </span>
-                      <a href="#" className="h6 fw-light mb-0"><i className="far fa-bookmark" /></a>
-                    </div>
-                    {/* Title */}
-                    <h5 className="card-title"><a href="#">Time Management Mastery: Do More,	Stress Less</a></h5>
-                    {/* Rating */}
-                    <div className="d-flex justify-content-between mb-2">
-                      <div className="hstack gap-2">
-                        <p className="text-warning m-0">4.5<i className="fas fa-star text-warning ms-1" /></p>
-                        <span className="small">(2000)</span>
-                      </div>
-                      <div className="hstack gap-2">
-                        <p className="h6 fw-light mb-0 m-0">8000</p>
-                        <span className="small">(Student)</span>
-                      </div>
-                    </div>
-                    {/* Time */}
-                    <div className="hstack gap-3">
-                      <span className="h6 fw-light mb-0"><i className="far fa-clock text-danger me-2" />24h 56m</span>
-                      <span className="h6 fw-light mb-0"><i className="fas fa-table text-orange me-2" />55 lectures</span>
-                    </div>
-                  </div>
-                  {/* Card footer */}
-                  <div className="card-footer pt-0 bg-transparent">
-                    <hr />
-                    {/* Avatar and Price */}
-                    <div className="d-flex justify-content-between align-items-center">
-                      {/* Avatar */}
-                      <div className="d-flex align-items-center">
-                        <div className="avatar avatar-sm">
-                          <img className="avatar-img rounded-1" src="assets/images/avatar/09.jpg" alt="avatar" />
-                        </div>
-                        <p className="mb-0 ms-2"><a href="#" className="h6 fw-light mb-0">Lori Stevens</a></p>
-                      </div>
-                      {/* Price */}
-                      <div>
-                        <h4 className="text-success mb-0 item-show">$500</h4>
-                        <a href="#" className="btn btn-sm btn-success-soft item-show-hover"><i className="fas fa-shopping-cart me-2" />Add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Card item END */}
-              {/* Card item START */}
-              <div>
-                <div className="card action-trigger-hover border bg-transparent">
-                  {/* Image */}
-                  <img src="assets/images/courses/4by3/16.jpg" className="card-img-top" alt="course image" />
-                  {/* Card body */}
-                  <div className="card-body pb-0">
-                    {/* Badge and favorite */}
-                    <div className="d-flex justify-content-between mb-3">
-                      <span className="hstack gap-2">
-                        <a href="#" className="badge bg-primary bg-opacity-10 text-primary">Design</a>
-                        <a href="#" className="badge text-bg-dark">Beginner</a>
-                      </span>
-                      <a href="#" className="h6 fw-light mb-0"><i className="far fa-bookmark" /></a>
-                    </div>
-                    {/* Title */}
-                    <h5 className="card-title"><a href="#">Time Management Mastery: Do More, Stress Less</a></h5>
-                    {/* Rating */}
-                    <div className="d-flex justify-content-between mb-2">
-                      <div className="hstack gap-2">
-                        <p className="text-warning m-0">4.0<i className="fas fa-star text-warning ms-1" /></p>
-                        <span className="small">(2000)</span>
-                      </div>
-                      <div className="hstack gap-2">
-                        <p className="h6 fw-light mb-0 m-0">1200</p>
-                        <span className="small">(Student)</span>
-                      </div>
-                    </div>
-                    {/* Time */}
-                    <div className="hstack gap-3">
-                      <span className="h6 fw-light mb-0"><i className="far fa-clock text-danger me-2" />09h 56m</span>
-                      <span className="h6 fw-light mb-0"><i className="fas fa-table text-orange me-2" />21 lectures</span>
-                    </div>
-                  </div>
-                  {/* Card footer */}
-                  <div className="card-footer pt-0 bg-transparent">
-                    <hr />
-                    {/* Avatar and Price */}
-                    <div className="d-flex justify-content-between align-items-center">
-                      {/* Avatar */}
-                      <div className="d-flex align-items-center">
-                        <div className="avatar avatar-sm">
-                          <img className="avatar-img rounded-1" src="assets/images/avatar/01.jpg" alt="avatar" />
-                        </div>
-                        <p className="mb-0 ms-2"><a href="#" className="h6 fw-light mb-0">Frances Guerrero</a></p>
-                      </div>
-                      {/* Price */}
-                      <div>
-                        <h4 className="text-success mb-0 item-show">$200</h4>
-                        <a href="#" className="btn btn-sm btn-success-soft item-show-hover"><i className="fas fa-shopping-cart me-2" />Add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Card item END */}
-            </div>
-          </div>
+          <Carousel>
+      <Carousel.Item>
+      <div className="course-box">
+
+        <div className="course-1">
+        <div className="image-box">
+          <img src={student} alt="" />
+        </div>
+        <div className="text-box">
+          <h2>Softwere Development Bootcamp</h2>
+          <p>A tailored 24-week bootcamp, perfect for tech newcomers or those with minimal programming experience who want to transform their career.</p>
+          <button className="button-m"> Learn More</button>
+        </div>
+        </div>
+        <div className="course-2">
+        <div className="image-box">
+          <img src={student} alt="" />
+        </div>
+        <div className="text-box">
+          <h2>Softwere Development Bootcamp</h2>
+          <p>A tailored 24-week bootcamp, perfect for tech newcomers or those with minimal programming experience who want to transform their career.</p>
+          <button className="button-m"> Learn More</button>
+
+        </div>
+        </div>
+      </div>
+      </Carousel.Item>
+      <Carousel.Item>
+        <div className="course-box">
+      <div className="course-1">
+        <div className="image-box">
+          <img src={student} alt="" />
+        </div>
+        <div className="text-box">
+          <h2>Softwere Development Bootcamp</h2>
+          <p>A tailored 24-week bootcamp, perfect for tech newcomers or those with minimal programming experience who want to transform their career.</p>
+          <button className="button-m"> Learn More</button>
+
+        </div>
+        </div>
+        <div className="course-2">
+        <div className="image-box">
+          <img src={student} alt="" />
+        </div>
+        <div className="text-box">
+          <h2>Softwere Development Bootcamp</h2>
+          <p>A tailored 24-week bootcamp, perfect for tech newcomers or those with minimal programming experience who want to transform their career.</p>
+          <button className="button-m"> Learn More</button>
+
+        </div>
+        </div>
+        </div>
+      </Carousel.Item>
+   
+    </Carousel>
+        
           {/* Slider END */}
         </div>
       </div>
@@ -2096,7 +1317,7 @@ Reviews START */}
                 <div className="bg-body shadow text-center p-4 rounded-3 position-relative mb-5 mb-md-0">
                   {/* Avatar */}
                   <div className="avatar avatar-xl mb-3">
-                    <img className="avatar-img rounded-circle" src="assets/images/avatar/01.jpg" alt="avatar" />
+                    <img className="avatar-img rounded-circle" src={my1} alt="avatar" />
                   </div>
                   {/* Content */}
                   <blockquote>
@@ -2131,7 +1352,7 @@ Reviews START */}
                   <div className="d-flex align-items-center mb-3">
                     {/* Avatar */}
                     <div className="avatar avatar-sm">
-                      <img className="avatar-img rounded-1" src="assets/images/avatar/09.jpg" alt="avatar" />
+                      <img className="avatar-img rounded-1" src={my2} alt="avatar" />
                     </div>
                     {/* Info */}
                     <div className="ms-2">
@@ -2143,7 +1364,7 @@ Reviews START */}
                   <div className="d-flex align-items-center mb-3">
                     {/* Avatar */}
                     <div className="avatar avatar-sm">
-                      <img className="avatar-img rounded-1" src="assets/images/avatar/04.jpg" alt="avatar" />
+                      <img className="avatar-img rounded-1" src={my3} alt="avatar" />
                     </div>
                     {/* Info */}
                     <div className="ms-2">
@@ -2155,7 +1376,7 @@ Reviews START */}
                   <div className="d-flex align-items-center">
                     {/* Avatar */}
                     <div className="avatar avatar-sm">
-                      <img className="avatar-img rounded-1" src="assets/images/avatar/02.jpg" alt="avatar" />
+                      <img className="avatar-img rounded-1" src={my4} alt="avatar" />
                     </div>
                     {/* Info */}
                     <div className="ms-2">
@@ -2238,7 +1459,7 @@ Reviews START */}
                 <div className="bg-body shadow text-center p-4 rounded-3">
                   {/* Avatar */}
                   <div className="avatar avatar-xl mb-3">
-                    <img className="avatar-img rounded-circle" src="assets/images/avatar/03.jpg" alt="avatar" />
+                    <img className="avatar-img rounded-circle" src={my1} alt="avatar" />
                   </div>
                   {/* Content */}
                   <blockquote>
@@ -2288,7 +1509,7 @@ Footer START */}
             <img className="light-mode-item h-40px" src="assets/images/logo.svg" alt="logo" />
             <img className="dark-mode-item h-40px" src="assets/images/logo-light.svg" alt="logo" />
           </a>
-          <p className="my-3">Eduport education theme, built specifically for the education centers which is dedicated to teaching and involve learners.</p>
+          <p className="my-3">At Vertemy, we believe in empowering minds, nurturing growth, and shaping the leaders of tomorrow. Here, knowledge is not just learned—it’s lived.</p>
           {/* Social media icon */}
           <ul className="list-inline mb-0 mt-3">
             <li className="list-inline-item"> <a className="btn btn-white btn-sm shadow px-2 text-facebook" href="#"><i className="fab fa-fw fa-facebook-f" /></a> </li>
@@ -2339,19 +1560,17 @@ Footer START */}
           <h5 className="mb-2 mb-md-4">Contact</h5>
           {/* Time */}
           <p className="mb-2">
-            Toll free:<span className="h6 fw-light ms-2">+1234 568 963</span>
-            <span className="d-block small">(9:AM to 8:PM IST)</span>
+            Toll free:<span className="h6 fw-light ms-2">+234 7038410207</span>
+            <span className="d-block small">(9:AM to 8:PM SAT)</span>
           </p>
-          <p className="mb-0">Email:<span className="h6 fw-light ms-2">example@gmail.com</span></p>
+          <p className="mb-0">Email:<span className="h6 fw-light ms-2">vertemy25@gmail.com</span></p>
           <div className="row g-2 mt-2">
             {/* Google play store button */}
             <div className="col-6 col-sm-4 col-md-3 col-lg-6">
-              <a href="#"> <img src="assets/images/client/google-play.svg" alt /> </a>
+              <a href="#"> <img src="assets/images/client/google-play.svg" alt="" /> </a>
             </div>
             {/* App store button */}
-            <div className="col-6 col-sm-4 col-md-3 col-lg-6">
-              <a href="#"> <img src="assets/images/client/app-store.svg" alt="app-store" /> </a>
-            </div>
+           
           </div> {/* Row END */}
         </div> 
         {/* Widget 3 END */}
@@ -2363,7 +1582,7 @@ Footer START */}
         <div className="container px-0">
           <div className="d-lg-flex justify-content-between align-items-center py-3 text-center text-md-left">
             {/* copyright text */}
-            <div className="text-body text-primary-hover"> Copyrights ©2024 Eduport. Build by <a href="https://www.webestica.com/" target="_blank" className="text-body">Webestica</a></div>
+            <div className="text-body text-primary-hover"> Copyrights ©2024 Vertemy.</div>
             {/* copyright links*/}
             <div className="justify-content-center mt-3 mt-lg-0">
               <ul className="nav list-inline justify-content-center mb-0">
@@ -2374,9 +1593,9 @@ Footer START */}
                       <i className="fas fa-globe me-2" />Language
                     </a>
                     <ul className="dropdown-menu min-w-auto" aria-labelledby="languageSwitcher">
-                      <li><a className="dropdown-item me-4" href="#"><img className="fa-fw me-2" src="assets/images/flags/uk.svg" alt />English</a></li>
-                      <li><a className="dropdown-item me-4" href="#"><img className="fa-fw me-2" src="assets/images/flags/gr.svg" alt />German </a></li>
-                      <li><a className="dropdown-item me-4" href="#"><img className="fa-fw me-2" src="assets/images/flags/sp.svg" alt />French</a></li>
+                      <li><a className="dropdown-item me-4" href="#"><img className="fa-fw me-2" src="assets/images/flags/uk.svg" alt="" />English</a></li>
+                      <li><a className="dropdown-item me-4" href="#"><img className="fa-fw me-2" src="assets/images/flags/gr.svg" alt="" />German </a></li>
+                      <li><a className="dropdown-item me-4" href="#"><img className="fa-fw me-2" src="assets/images/flags/sp.svg" alt="" />French</a></li>
                     </ul>
                   </div>
                 </li>
@@ -2391,11 +1610,14 @@ Footer START */}
   </footer>
   {/* =======================
 Footer END */}
+  {/* Back to top */}
+  <div className="back-top"><i className="bi bi-arrow-up-short position-absolute top-50 start-50 translate-middle" /></div>
+  {/* Bootstrap JS */}
+  {/* Vendors */}
+  {/* Template Functions */}
+  {/* Mirrored from eduport.webestica.com/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Sep 2024 10:55:50 GMT */}
 </div>
 
-
-
-    </>
   )
 }
 

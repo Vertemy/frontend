@@ -1,5 +1,7 @@
-import Page1 from "./page1";
+import Page1 from "./Page1";
+import Navbar from "./NavbarComponet";
 
 export{
-    Page1
+    Page1,
+    Navbar
 }
