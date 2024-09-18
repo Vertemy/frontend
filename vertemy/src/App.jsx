@@ -8,8 +8,12 @@ function App() {
       
   return (
     <>
+    <div className='root'>
     <Navbar />
+
     <Page1 />
+
+    </div>
     </>
   )
 }
