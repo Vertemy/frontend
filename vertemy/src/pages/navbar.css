@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 35px;
+    margin-right: 90px!important;
 }
 
 .left-nav{
@@ -33,9 +33,9 @@
   .login{
     background-color: #e4f5ff!important;
     color: rgb(6, 106, 201);
-    width: 90px;
     margin-left:10px ;
-
+    width: 80px!important;
+    text-align: center;
 
   }
   .signinP{
@@ -44,3 +44,13 @@
     
     align-items: center;
   }
+  .nav-nav {
+    background-color: white!important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+ 

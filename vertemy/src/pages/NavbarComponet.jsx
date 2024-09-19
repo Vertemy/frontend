@@ -14,8 +14,8 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 const NavbarComponent = () => {
   return (
-    <div>
-      <Navbar expand="lg" className="bg-body-tertiary">
+    <div className='nav-nav'>
+      <Navbar expand="lg" className=" ">
         <Container fluid>
           <Navbar.Brand href="#">
             <span style={{ fontSize: '24px', fontWeight: 'bold' }}>VERTEMY</span>
