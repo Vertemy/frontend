@@ -21,40 +21,40 @@ const DashboardC = () => {
               <div className="bg-dark border rounded-3 pb-0 p-3 w-100">
                 {/* Dashboard menu */}
                 <div className="list-group list-group-dark list-group-borderless">
-      <NavLink className="list-group-item" activeClassName="active" to="/instructor-dashboard">
+      <NavLink className="list-group-item" activeClassName="active" to="/become">
         <i className="bi bi-ui-checks-grid fa-fw me-2" /> Dashboard
       </NavLink>
-      <NavLink className="list-group-item" activeClassName="active" to="/instructor-manage-course">
+      <NavLink className="list-group-item" activeClassName="active" to="/IntructorCourses">
         <i className="bi bi-basket fa-fw me-2" /> My Courses
       </NavLink>
-      <NavLink className="list-group-item" activeClassName="active" to="/instructor-quiz">
+      <NavLink className="list-group-item" activeClassName="active" to="/IntructorQuiz">
         <i className="bi bi-question-diamond fa-fw me-2" /> Quiz
       </NavLink>
-      <NavLink className="list-group-item" activeClassName="active" to="/instructor-earning">
+      <NavLink className="list-group-item" activeClassName="active" to="/IntructorEarning">
         <i className="bi bi-graph-up fa-fw me-2" /> Earnings
       </NavLink>
-      <NavLink className="list-group-item" activeClassName="active" to="/instructor-studentlist">
+      <NavLink className="list-group-item" activeClassName="active" to="/IntructorStudent">
         <i className="bi bi-people fa-fw me-2" /> Students
       </NavLink>
-      <NavLink className="list-group-item" activeClassName="active" to="/instructor-order">
+      <NavLink className="list-group-item" activeClassName="active" to="/IntructorOrder">
         <i className="bi bi-folder-check fa-fw me-2" /> Orders
       </NavLink>
-      <NavLink className="list-group-item" activeClassName="active" to="/instructor-review">
+      <NavLink className="list-group-item" activeClassName="active" to="/Intructorreveiw">
         <i className="bi bi-star fa-fw me-2" /> Reviews
       </NavLink>
       <NavLink className="list-group-item" activeClassName="active" to="/EditIntructorProfile">
         <i className="bi bi-pencil-square fa-fw me-2" /> Edit Profile
       </NavLink>
-      <NavLink className="list-group-item" activeClassName="active" to="/instructor-payout">
+      <NavLink className="list-group-item" activeClassName="active" to="/IntructorPayout">
         <i className="bi bi-wallet2 fa-fw me-2" /> Payouts
       </NavLink>
-      <NavLink className="list-group-item" activeClassName="active" to="/instructor-setting">
+      <NavLink className="list-group-item" activeClassName="active" to="/Setting">
         <i className="bi bi-gear fa-fw me-2" /> Settings
       </NavLink>
-      <NavLink className="list-group-item" activeClassName="active" to="/instructor-delete-account">
+      <NavLink className="list-group-item" activeClassName="active" to="/DeleteAccout">
         <i className="bi bi-trash fa-fw me-2" /> Delete Profile
       </NavLink>
-      <NavLink className="list-group-item text-danger bg-danger-soft-hover" to="/sign-in">
+      <NavLink className="list-group-item text-danger bg-danger-soft-hover" to="/Signout">
         <i className="fas fa-sign-out-alt fa-fw me-2" /> Sign Out
       </NavLink>
     </div>
