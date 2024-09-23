@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 
 import Container from 'react-bootstrap/Container';
 import { Form, InputGroup } from 'react-bootstrap';
@@ -17,7 +18,7 @@ const NavbarComponent = () => {
     <div className='nav-nav'>
       <Navbar expand="lg" className=" ">
         <Container fluid>
-          <Navbar.Brand href="#">
+          <Navbar.Brand href="/">
             <span style={{ fontSize: '24px', fontWeight: 'bold' }}>VERTEMY</span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
@@ -205,8 +206,8 @@ const NavbarComponent = () => {
               </div>
               <div className='linkss' >
               <Nav.Link  href="#library">Library</Nav.Link>
-              <Nav.Link  href="#become-instructor">Become an Instructor</Nav.Link>
-              <Nav.Link  href="#about">About Us</Nav.Link>
+              <Nav.Link  href="/instructor">Become an Instructor</Nav.Link>
+              <Nav.Link  href="/about">About Us</Nav.Link>
               </div>
               
             </Nav>
@@ -228,8 +229,8 @@ const NavbarComponent = () => {
             
           <div className='signin'>
           <Nav className="ml-auto">
-              <Nav.Link className='login' href="#sign-in">Sign In</Nav.Link>
-              <Nav.Link className='login' href="#sign-in">log in</Nav.Link>
+              <Nav.Link className='login' href="/Signup">Sign Up</Nav.Link>
+              <Nav.Link className='login' href="/Signin">Sign In</Nav.Link>
               <Nav.Link href="#cart" className="d-flex align-items-center">
       <FontAwesomeIcon icon={faShoppingCart} />
     </Nav.Link>

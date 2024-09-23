@@ -34,13 +34,14 @@
     background-color: #e4f5ff!important;
     color: rgb(6, 106, 201);
     margin-left:10px ;
-    width: 80px!important;
+    width: 90px!important;
     text-align: center;
 
   }
-  .signinP{
+  .signin{
     display: flex;
     justify-content: center;
+    
     
     align-items: center;
   }
@@ -52,5 +53,6 @@
     width: 100%;
     z-index: 1000;
   }
+  
   
  
